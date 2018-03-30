@@ -8,9 +8,9 @@ document.write (result);
 function solveQuad (a, b, c) {
     const d = calcDisc(a, b, c);
     if (d>0){
-       x1 = (-b + Math.sqrt(d))/2*a 'br';
+       x1 = (-b + Math.sqrt(d))/2*a;
        x2 = (-b - Math.sqrt(d))/2*a;
-    return 'x1= ' + x1   + 'x2 = ' + x2; 
+    return 'x1= ' + x1  + 'x2 = ' + x2; 
     }
         else if (d===0){ 
             x1 = -(b/2*a);
@@ -19,4 +19,8 @@ function solveQuad (a, b, c) {
 }
 function calcDisc(a, b, c) {
     return b**2 - 4*a*c;
+}
+
+function prn (val) {
+    document.write (val + '<br');
 }
